@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Django
+db.sqlite3
+db.sqlite3-journal
+/media/
+/staticfiles/
+
+# Ambiente e segredos
+.env
+.venv/
+venv/
+
+# Editor e sistema
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

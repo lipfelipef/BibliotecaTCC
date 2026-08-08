@@ -3,7 +3,11 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-chave-de-desenvolvimento-local'
+# A chave vem da variável de ambiente DJANGO_SECRET_KEY. O valor abaixo é
+# apenas para rodar em desenvolvimento e não deve ser usado em produção.
+SECRET_KEY = os.environ.get(
+    'DJANGO_SECRET_KEY', 'django-insecure-chave-de-desenvolvimento-local'
+)
 
 DEBUG = True
 
